@@ -16,6 +16,11 @@
  */
 
 function question1() {
+	//solution using  DOM
+	document.querySelectorAll('p').forEach(function (str){
+		str.style.color = "blue";
+	});
+	// solution using jQuery 
 	$('p').css("color" ,"blue");
 }
 
@@ -55,6 +60,9 @@ $("#button3").on('click', question3);
  * When button 4 is clicked, change the background color of the whole page to "pink"
  */
 function question4(){
+	//solution using  DOM
+	document.body.style.backgroundColor = "pink";
+	// solution using jQuery 
 	$('body').css("backgroundColor" ,"pink");
 }
 
